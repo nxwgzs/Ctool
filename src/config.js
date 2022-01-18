@@ -1,5 +1,6 @@
 // 工具缓存数据过期时间(秒)
 const TOOL_DATA_EXPIRY = 3600 * 24
+
 // 徽章过期时间(天)
 const BADGE_EXPIRY = 5
 // 分类徽章
