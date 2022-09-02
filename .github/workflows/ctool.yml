@@ -22,7 +22,6 @@ jobs:
           npm install
 
       - name: Build web
-        if: startsWith(github.ref, 'refs/tags/')
         run: |
           npm run build -adapter=web
           cp -r ./dist ./dist_gh_pages
@@ -32,7 +31,6 @@ jobs:
           unzip -l ./temp_release/web.zip
 
       - name: Build chrome
-        if: startsWith(github.ref, 'refs/tags/')
         run: |
           npm run build -adapter=chrome
           cd ./dist
