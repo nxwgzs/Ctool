@@ -1,5 +1,5 @@
 name: Build Ctool
-on: [ push ]
+on: repository_dispatch
 jobs:
   deploy:
     runs-on: ubuntu-latest
